@@ -1,0 +1,39 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px ;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid black;
+}
+.container h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3em;
+}
+
+.gallery{    
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 1em;
+}
+.card{
+    position: relative;
+}
+.card > img{
+    border-radius: 0.8em;
+    max-width: 100%;
+    max-height: 100%;
+}
+.card >figcaption{
+    position: absolute;
+    font-size: 1em;
+    bottom: 20px;
+    left: 20px;
+}
